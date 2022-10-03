@@ -1,0 +1,126 @@
+.ContenedorRegistro{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ImgRegistro{
+    width: 100%;
+    height: auto;
+}
+
+.RegistroDiv{
+    text-align: center;
+}
+
+.BotonFacebook{
+    background-color: #3b5998;
+    margin: 10px;
+}
+
+.BotonGoogle{
+    background-color: #176bef;
+    margin: 10px;
+}
+
+.TituloRegistro{
+    margin: 20px 0px 10px 0px;
+    color: #E64848;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.Separador{
+    margin: 10px 40px 10px 40px;
+}
+
+.FormRegistro input, select{
+    margin: 10px 0px 10px 0px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    padding-left: 7px;
+    font-size: 14px;
+    background-color: #E5E5E5;
+    border: none;
+}
+
+.FormCheckbox {
+    width: 30px;
+    height: 30px;
+}
+
+.Terminos{
+    font-size: 16px;
+    margin: 20px 0px 0px 50px;
+    width: 300px;
+}
+
+.SeparadorRegistro{
+    margin: 10px 0px 10px 30px;
+}
+
+.BotonRegistrarme{
+    height: 45px;
+    width: 200px;
+    margin: 30px 0px 30px 0px;
+    background-color: #E64848;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.BotonRegistrarme:hover{
+    background-color: #C21010;
+}
+
+.TerminosEscritorio{
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .ImgRegistro{
+        content:url("./img/registro\ compu.jpg");
+    }
+
+    .Registro-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .SeparadorRegistro {
+        display: none;
+    }
+
+    .Terminos{
+        display: none;
+    }
+
+    .FormRegistro input, select{
+        height: 40px;
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .BotonFacebook{
+        width: 300px;
+    }
+    
+    .BotonGoogle{
+        width: 300px;
+    }
+
+    .Separador{
+        margin: 30px 60px 25px 60px;
+    }
+
+    .TituloRegistro{
+        font-size: 34px;
+    }
+
+    .TerminosEscritorio{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+}

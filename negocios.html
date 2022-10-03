@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./negocios.css">
+    <title>SalvaComida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header>
+            <img class="ImagenPpal" src="/img/ppal celular.jpg" alt="Logo" width="100%" height="auto">
+        </header>
+        <nav class="navbar navbarPag4">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Mis Pedidos</a></li>
+                    <li><a href="#">Mis datos</a></li>
+                    <li><a href="#">Ajustes</a></li>
+                    <li><a href="#">Salir</a></li>
+                </ul>
+            </div>
+            <form class="FormNav" action="" method="post" enctype="text/plain">
+                <input class="CampoBuscar" type="text" name="Texto" placeholder="Buscar local o comida">
+                <input class="BotonBuscar" type="submit" value="Buscar">
+            </form>
+        </nav>
+        <main>
+            <article>
+                <section class="SliderGrid">
+                    <div>
+                        <img class="ImagenSlider" src="/img/verduleria.jpg" alt="Verduleria">
+                        <h3>Verduleria</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/carniceria.jpg" alt="Carniceria">
+                        <h3>Carniceria</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/almacen.jpg" alt="Almacen">
+                        <h3>Almacen</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/restaurante.jpg" alt="Restaurante">
+                        <h3>Restaurante</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/panaderia.jpg" alt="Panaderia">
+                        <h3>Panaderia</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/cafeteria.jpg" alt="Cafeteria">
+                        <h3>Cafeteria</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/supermercado.jpg" alt="Supermercado">
+                        <h3>Supermercado</h3>
+                    </div>
+                    <div>
+                        <img class="ImagenSlider" src="/img/pescaderia.jpg" alt="Pescaderia">
+                        <h3>Pescaderia</h3>
+                    </div>
+                </section>
+                <section>
+                    <form action="">
+                        <select class="Filtro" onchange="SeleccionarFiltro()" id="FiltroSelect">
+                            <option value="Destacados">Ordenar por</option>
+                            <option value="Destacados">Destacados</option>
+                            <option value="Calificación">Calificación</option>
+                            <option value="Distancia">Distancia</option>
+                            <option value="Tiempo de entrega">Tiempo de entrega</option>
+                            <option value="Mejor oferta">Mejor oferta</option>
+                        </select>
+                    </form>
+                    <h1 class="TituloElementosDestacados" id="FiltroSeleccionado">Destacados&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;v</h1>
+                </section>
+            </article>
+            <article class="ListaDestacados">
+                <section class="ElementoDestacados">
+                    <div>
+                        <img class="ImagenComercio" src="/img/carniceria.jpg" alt="Carniceria" height="110">
+                    </div>
+                    <div class="InfoComercio">
+                        <h2 class="TituloComercio">Panaderia "Río de La PLata"</h2>
+                        <span class="TextoEnvio"><img src="/iconos/envio.png" height="15"/> Envío $100</span>
+                        <div class="DivInformacion">
+                            <span class="TextoUbicacion"><img src="/iconos/ubicacion.png" height="15"/> 1,2 km</span>
+                            <span class="TextoHorario"><img src="/iconos/ubicacion.png" height="15"/> 9 a 19 hs.</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="ElementoDestacados">
+                    <div>
+                        <img class="ImagenComercio" src="/img/carniceria.jpg" alt="Carniceria" height="110">
+                    </div>
+                    <div class="InfoComercio">
+                        <h2 class="TituloComercio">Panaderia "Río de La PLata"</h2>
+                        <span class="TextoEnvio"><img src="/iconos/envio.png" height="15"/> Envío $100</span>
+                        <div class="DivInformacion">
+                            <span class="TextoUbicacion"><img src="/iconos/ubicacion.png" height="15"/> 1,2 km</span>
+                            <span class="TextoHorario"><img src="/iconos/ubicacion.png" height="15"/> 9 a 19 hs.</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="ElementoDestacados">
+                    <div>
+                        <img class="ImagenComercio" src="/img/carniceria.jpg" alt="Carniceria" height="110">
+                    </div>
+                    <div class="InfoComercio">
+                        <h2 class="TituloComercio">Panaderia "Río de La PLata"</h2>
+                        <span class="TextoEnvio"><img src="/iconos/envio.png" height="15"/> Envío $100</span>
+                        <div class="DivInformacion">
+                            <span class="TextoUbicacion"><img src="/iconos/ubicacion.png" height="15"/> 1,2 km</span>
+                            <span class="TextoHorario"><img src="/iconos/ubicacion.png" height="15"/> 9 a 19 hs.</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="ElementoDestacados">
+                    <div>
+                        <img class="ImagenComercio" src="/img/carniceria.jpg" alt="Carniceria" height="110">
+                    </div>
+                    <div class="InfoComercio">
+                        <h2 class="TituloComercio">Panaderia "Río de La PLata"</h2>
+                        <span class="TextoEnvio"><img src="/iconos/envio.png" height="15"/> Envío $100</span>
+                        <div class="DivInformacion">
+                            <span class="TextoUbicacion"><img src="/iconos/ubicacion.png" height="15"/> 1,2 km</span>
+                            <span class="TextoHorario"><img src="/iconos/ubicacion.png" height="15"/> 9 a 19 hs.</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="ElementoDestacados">
+                    <div>
+                        <img class="ImagenComercio" src="/img/carniceria.jpg" alt="Carniceria" height="110">
+                    </div>
+                    <div class="InfoComercio">
+                        <h2 class="TituloComercio">Panaderia "Río de La PLata"</h2>
+                        <span class="TextoEnvio"><img src="/iconos/envio.png" height="15"/> Envío $100</span>
+                        <div class="DivInformacion">
+                            <span class="TextoUbicacion"><img src="/iconos/ubicacion.png" height="15"/> 1,2 km</span>
+                            <span class="TextoHorario"><img src="/iconos/ubicacion.png" height="15"/> 9 a 19 hs.</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="ElementoDestacados">
+                    <div>
+                        <img class="ImagenComercio" src="/img/carniceria.jpg" alt="Carniceria" height="110">
+                    </div>
+                    <div class="InfoComercio">
+                        <h2 class="TituloComercio">Panaderia "Río de La PLata"</h2>
+                        <span class="TextoEnvio"><img src="/iconos/envio.png" height="15"/> Envío $100</span>
+                        <div class="DivInformacion">
+                            <span class="TextoUbicacion"><img src="/iconos/ubicacion.png" height="15"/> 1,2 km</span>
+                            <span class="TextoHorario"><img src="/iconos/ubicacion.png" height="15"/> 9 a 19 hs.</span>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="InfoPiePagina">
+                <hr>
+                <section class="InfoBeneficios">
+                    <h1>BENEFICIOS DE SALVA COMIDA</h1>
+                    <p>Salva Comida te permite reducir el desperdicio de alimentos y recuperar dinero con el excedente que de otro modo se habría tirado a la basura.</p>
+                    <p>Además, el 76% de los clientes que descubren una tienda a través de Salva Comida vuelven como clientes habituales.</p>
+                    <h2>Atrae a nuevos clientes y converti tus pérdidas en ganancias!</h2>
+                    <p>Nuestra web ayuda a muchos restaurantes a evitar el desperdicio de alimentos.</p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="FooterPosicion">
+                <h2 class="FooterTexto">Suscribite</h2>
+                <h3 class="FooterTexto">y enterate todas las novedades!</h3>
+                <form class="FormFooter" action="" method="post" enctype="text/plain">
+                    <input class="CampoSuscripcion" type="email" name="email" placeholder="Ingresa tu email aquí">
+                    <input class="BotonSuscripcion" type="submit" value="Unirse">
+                </form>
+            </div>
+            <div class="FooterPosicion">
+                <ul type="none">
+                    <li class="FooterLista"><a class="LinkFooter" href="">Ayuda</a></li>
+                    <li class="FooterLista"><a class="LinkFooter" href="">Contacto</a></li>
+                    <li class="FooterLista"><a class="LinkFooter" href="">Descargá la app</a></li>
+                </ul>
+                <div class="Iconos">
+                    <a class="BotonIcono" href=""><img src="iconos/ig.png" alt="instagram" width="30px" height="auto"></a>
+                    <a class="BotonIcono" href=""><img src="iconos/fb.png" alt="facebook" width="15px" height="auto"></a>
+                    <a class="BotonIcono" href=""><img src="iconos/tw.png" alt="twitter" width="30px" height="auto"></a>
+                </div>
+            </div>
+            <div class="FooterPosicion ListaEscritorio">
+                <ul type="none">
+                    <li class="FooterLista"><a class="LinkFooter" href="">Terminos y condiciones</a></li>
+                    <li class="FooterLista"><a class="LinkFooter" href="">Política de privacidad</a></li>
+                    <li class="FooterLista"><a class="LinkFooter" href="">Política de cookies</a></li>
+                </ul>  
+            </div>                  
+        </footer>
+    </div>
+    <script src="/js/filtro.js"></script>
+</body>
+</html>
