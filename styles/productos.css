@@ -1,0 +1,212 @@
+.navbarPag4{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.FormNav{
+    text-align: right;
+    padding: 10px 10px 0px 0px;
+}
+
+.CampoBuscar{
+    height: 30px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 5px;
+}
+
+.BotonBuscar{
+    height: 30px;
+    width: 60px;
+    background-color: #E64848;
+    color: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.btn-group .button {
+    background-color: #E64848; 
+    border: 1px solid #C21010;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-group .button:hover {
+    background-color: #C21010;
+}
+
+/**/
+.InfoNegocio{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    place-content: center;
+    text-align: center;
+    row-gap: 15px;
+}
+
+.Centrar{
+    display: grid;
+    place-content: center;
+}
+
+/**/
+.ListaProductos{
+    display: grid;
+    margin: 20px 0px 20px 0px;
+}
+
+.Producto{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 0px 10px 0px 10px;
+}
+
+.ProductoPrecio{
+    text-align: center;
+}
+
+.LineaPunteada{
+    border-top: 1px dashed grey;
+    margin: 10px 20px 5px 20px;
+}
+
+.BotonAgregar{
+    height: 30px;
+    margin: 0px;
+    width: 70px;
+    background-color: #E64848;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.BotonAgregar:hover {
+    background-color: #C21010;
+}
+
+.ProductoPrecio p{
+    font-size: 12px;
+    display: none;
+}
+
+.Direccion{
+    margin-top: 10px;
+}
+
+.ImagenProducto{
+    display: none;
+}
+
+.InfoEnvio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.InfoHorario{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.InfoPrecio{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.InfoDistancia {
+    display: none;
+    text-align: left;
+    margin-left: 30px;
+}
+
+/**/
+
+@media (min-width: 1200px) {
+    .navbarPag4{
+        display: block;
+    }
+
+    .FormNav{
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .ImagenPpal{
+        content:url("../img/ppal_escritorio.jpg")
+    }
+
+    .InfoNegocio{
+        grid-template-rows: 1fr;
+        grid-template-columns: 300px 1fr 1fr;
+        margin: 20px;
+        place-content: none;
+        text-align: left;
+        column-gap: 20px;
+    }
+
+    .Centrar{
+        display: block;
+    }
+
+    .Centrar h1{
+        font-size: 36px;
+    }
+
+    .Centrar p{
+        margin-top: 20px;
+    }
+
+    .ModoEntrega{
+        text-align: center;
+    }
+
+    .btn-group .button {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .ImagenNegocio{
+        width: 300px;
+        border-radius: 15px;
+    }
+
+    .ListaProductos{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .LineaPunteada{
+        display: none;
+    }
+
+    .ImagenProducto{
+        display: block;
+    }
+
+    .Producto{
+        grid-template-columns: 150px 1fr 1fr;
+        margin: 0px 20px 0px 20px;
+        column-gap: 10px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .ImagenProducto img{
+        border-radius: 15px;
+    }
+
+    .ProductoPrecio{
+        margin: 20px;
+    }
+
+    .BotonAgregar{
+        width: 90px;
+    }
+}

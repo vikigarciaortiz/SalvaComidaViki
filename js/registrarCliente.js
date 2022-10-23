@@ -1,4 +1,4 @@
-
+/*
 alert ('Bienvenidx a Salva Comida! Para registrarte ingresá los siguientes datos')
 
 let Email = prompt ('Ingresa tu correo electrónico.')
@@ -21,4 +21,29 @@ if (confirm('¿Te querés registrar como consumidor?')){
     let NombreCiudad = prompt ('¿En qué ciudad se encuentra?')
     let Direccion = prompt ('Ingresa la dirección del negocio.')
     alert ('Se registró el negocio ' + NombreNegocio)
+}*/
+
+
+function registrarConsumidor() {
+    let nombre = document.getElementById("ConsuNombreCompleto").value;
+    let correo = document.getElementById("ConsuCorreo").value;
+    let clave = document.getElementById("ConsuClave").value;
+    let celular = document.getElementById("ConsuCelular").value;
+
+    let mensaje = document.getElementById("MensajeRegistro");
+    mensaje.style.display = "grid";
 }
+
+function registrarNegocio() {
+    let nombre = document.getElementById("NegNombre").value;
+    let local = document.getElementById("NegLocal").value;
+    let ciudad = document.getElementById("NegCiudad").value;
+    let direccion = document.getElementById("NegDireccion").value;
+    let correo = document.getElementById("NegCorreo").value;
+    let clave = document.getElementById("NegClave").value;
+    let celular = document.getElementById("NegCelular").value;
+
+    let mensaje = document.getElementById("MensajeRegistro");
+    mensaje.style.display = "grid";
+}
+

@@ -4,6 +4,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+body{
+  background-color: #F9F6F4;
+}
+
 .main{
     margin-top: 75px;
 }
@@ -322,7 +326,7 @@ footer{
     }
 
     .ImagenPpal{
-        content:url("img/ppal\ escritorio.jpg")
+        content:url("./img/ppal_escritorio.jpg")
     }
 
     .main{

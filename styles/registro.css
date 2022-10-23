@@ -78,9 +78,28 @@
     display: none;
 }
 
+.MensajeRegistro {
+    display: none;
+    grid-template-columns: 300px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.MensajeRegistro h4 {
+    padding: 25px;
+    background-color: #C21010;
+    color: white;
+    border-radius: 10px;
+}
+
 @media (min-width: 1200px) {
     .ImgRegistro{
-        content:url("./img/registro\ compu.jpg");
+        content:url("../img/registro_compu.jpg");
+    }
+
+    .ImagenPpal{
+        content:url("../img/ppal_escritorio.jpg")
     }
 
     .Registro-grid{

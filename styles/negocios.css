@@ -128,6 +128,10 @@
         margin-left: 20px;
     }
 
+    .ImagenPpal{
+        content:url("../img/ppal_escritorio.jpg")
+    }
+
     .ListaDestacados {
         padding: 10px;
         display: grid;
@@ -227,4 +231,5 @@
     .TextoHorario{
         margin-left: 10px;
     }
+
 }
