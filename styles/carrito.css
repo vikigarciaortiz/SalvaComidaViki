@@ -1,0 +1,128 @@
+.HeaderCarrito{
+    background-color: #C21010;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+
+.LogoHeader{
+    width: 80px;
+    text-align: center;
+}
+
+.NegocioCarrito{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ImgComercio{
+    width: 80px;
+}
+
+.ProductosCarrito{
+    background-color: white;
+    display: grid;
+    margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.ImagenProducto{
+    display: none;
+}
+
+.BotonMasProductos{
+    margin: 0px 20px 20px 20px;
+    height: 40px;
+    width: 335px;
+    background-color: #E64848;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.BotonMasProductos:hover{
+    background-color: #C21010;
+}
+
+.BotonPedido{
+    margin: 0px 20px 20px 20px;
+    height: 40px;
+    width: 335px;
+    background-color: #C21010;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.BotonPedido:hover{
+    background-color: #E64848;
+}
+
+.EntregaCarrito{
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.MapaDireccion{
+    border-radius: 10px
+}
+
+.MetodoPago{
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.ResumenPedido{
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+
+    .GridCarrito{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "negocio    resumen"
+            "productos  resumen"
+            "+productos finzalizar"
+            "entrega"
+            "pago";
+    }
+
+    .NegocioCarrito{
+        grid-area: negocio;
+    }
+    .ProductosCarrito{
+        grid-area: productos;
+    }
+    .AgregarProducto{
+        grid-area: +productos;
+    }
+    .EntregaCarrito{
+        grid-area: entrega;
+    }
+    .MetodoPago{
+        grid-area: pago;
+    }
+    .ResumenPedido{
+        grid-area: resumen;
+    }
+    .FinalizarCarrito{
+        grid-area: finalizar;
+    }
+}
+

@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Tomate",
+        "descripcion": "Verduras frescas",
+        "precio": 15,
+        "stock": 0
+    },
+    {
+        "nombre": "Lechuga",
+        "descripcion": "Verduras frescas",
+        "precio": 3.50,
+        "stock": 120
+    }
+]

@@ -44,23 +44,23 @@
                         <button class="BotonRegistro BotonFacebook">Resgistrate con Facebook</button><br>
                         <button class="BotonRegistro BotonGoogle">Registrate con Google</button><br>
                         <hr class="Separador">
-                        <form class="FormRegistro" action="">
-                            <input id="ConsuNombreCompleto" type="text" placeholder="Nombre completo"><br>
-                            <input id="ConsuCorreo" type="email" placeholder="Correo electrónico"><br>
-                            <input id="ConsuClave" type="password" placeholder="Contraseña"><br>
-                            <input id="ConsuCelular" type="text" placeholder="Celular"><br>
+                        <form id="IDFormRegistroConsumidor" class="FormRegistro" onsubmit="registrarConsumidor(); return false;">
+                            <input id="ConsuNombreCompleto" type="text" placeholder="Nombre completo" required="required"><br>
+                            <input id="ConsuCorreo" type="email" placeholder="Correo electrónico" required="required"><br>
+                            <input id="ConsuClave" type="password" minlength="8" maxlength="15" placeholder="Contraseña" required="required"><br>
+                            <input id="ConsuCelular" type="text" placeholder="Celular" required="required"><br>
                         </form>
                         <div class="Terminos">
                             <input class="FormCheckbox" type="checkbox" id="TerminosYcondiciones">
                             <label for="TerminosYcondiciones">Acepto los terminos y condiciones, y las políticas de privacidad.</label>
-                            <button class="BotonRegistrarme" onclick="registrarConsumidor()">Registrarme</button>
+                            <button type="submit" form="IDFormRegistroConsumidor" class="BotonRegistrarme">Registrarme</button>
                         </div>
                     </div>
                     <hr class="SeparadorRegistro">
                     <div class="RegistroDiv">
                         <h2 class="TituloRegistro">NEGOCIOS</h2>
-                        <form class="FormRegistro" action="">
-                            <input id="NegNombre" type="text" placeholder="Nombre del negocio"><br>
+                        <form id="IDFormRegistroNegocio" class="FormRegistro" onsubmit="registrarNegocio(); return false;">
+                            <input id="NegNombre" type="text" placeholder="Nombre del negocio" required="required"><br>
                             <select name="" id="NegLocal">
                                 <option value="">Seleccionar local</option>
                                 <option value="">Fiambreria</option>
@@ -71,26 +71,26 @@
                                 <option value="">Restaurante</option>
                                 <option value="">Cafeteria</option>
                             </select><br>
-                            <input id="NegCiudad" type="text" placeholder="Ciudad"><br>
-                            <input id="NegDireccion" type="text" placeholder="Dirección"><br>
-                            <input id="NegCorreo" type="email" placeholder="Correo electrónico" required><br>
-                            <input id="NegClave" type="password" placeholder="Contraseña"><br>
-                            <input id="NegCelular" type="text" placeholder="Celular"><br>
+                            <input id="NegCiudad" type="text" placeholder="Ciudad" required="required"><br>
+                            <input id="NegDireccion" type="text" placeholder="Dirección" required="required"><br>
+                            <input id="NegCorreo" type="email" placeholder="Correo electrónico" required="required"><br>
+                            <input id="NegClave" type="password" minlength="8" maxlength="15" placeholder="Contraseña" required="required"><br>
+                            <input id="NegCelular" type="text" placeholder="Celular" required="required"><br>
                         </form>
                         <div class="Terminos">
                             <input class="FormCheckbox" type="checkbox" id="TerminosYcondiciones">
                             <label for="TerminosYcondiciones">Acepto los terminos y condiciones, y las políticas de privacidad.</label>
-                            <button class="BotonRegistrarme" onclick="registrarNegocio()">Registrarme</button>
+                            <button type="submit" class="BotonRegistrarme" form="IDFormRegistroNegocio">Registrarme</button>
                         </div>
                     </div>
                 </section>
                 <div class="TerminosEscritorio">
                     <input class="FormCheckbox" type="checkbox" id="TerminosYcondiciones">
                     <label for="TerminosYcondiciones">Acepto los terminos y condiciones, y las políticas de privacidad.</label><br>
-                    <button class="BotonRegistrarme" onclick="registrarConsumidor()">Registrarme</button>
+                    <button type="submit" form="IDFormRegistroConsumidor" class="BotonRegistrarme">Registrarme</button>
                 </div>
                 <div id="MensajeRegistro" class="MensajeRegistro">
-                    <h4>Gracias por registrarte!</h4>
+                    <h4 id="MensajeFinal">Gracias por registrarte!</h4>
                 </div>
             </article>
         </main>

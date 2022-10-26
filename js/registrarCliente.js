@@ -30,8 +30,14 @@ function registrarConsumidor() {
     let clave = document.getElementById("ConsuClave").value;
     let celular = document.getElementById("ConsuCelular").value;
 
-    let mensaje = document.getElementById("MensajeRegistro");
-    mensaje.style.display = "grid";
+    if (screen.width < 900) {
+        alert("Gracias por registrarte " + nombre + "!");
+    } else {
+        let mensaje = document.getElementById("MensajeRegistro");
+        let texto = document.getElementById("MensajeFinal");
+        texto.innerHTML = "Gracias por registrarte " + nombre + "!";
+        mensaje.style.display = "grid";
+    }
 }
 
 function registrarNegocio() {
@@ -43,7 +49,13 @@ function registrarNegocio() {
     let clave = document.getElementById("NegClave").value;
     let celular = document.getElementById("NegCelular").value;
 
-    let mensaje = document.getElementById("MensajeRegistro");
-    mensaje.style.display = "grid";
+    if (screen.width < 900) {
+        alert("Gracias por registrarte " + nombre + "!");
+    } else {
+        let mensaje = document.getElementById("MensajeRegistro");
+        let texto = document.getElementById("MensajeFinal");
+        texto.innerHTML = "Gracias por registrarte " + nombre + "!";
+        mensaje.style.display = "grid";
+    }
 }
 

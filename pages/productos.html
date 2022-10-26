@@ -41,12 +41,21 @@
             <article>
                 <section class="InfoNegocio">
                     <div>
-                        <img class="ImagenNegocio" src="../img/restaurante1.jpg" alt="negocio" width="100%">
+                        <img class="ImagenNegocio" src="../img/supermercado22.jpg" alt="negocio" width="100%">
                     </div>
                     <div class="Centrar">
-                        <h1>Pizzeria "Pasillo 51"</h1>
-                        <h4 class="Direccion">Calle 51 n°496 e/ 4 y 5 &nbsp&nbsp&nbsp&nbsp•&nbsp&nbsp&nbsp&nbsp <a href="">Ver en mapa</a></h4>
-                        <p>fgsdfsgfgsdfgdfgsdfgsdfgsdfgg</p>
+                        <h1>Supermercado "El Nene"</h1>
+                        <h4 class="Direccion">Calle 6 n°1299 e/ 58 y 59 &nbsp&nbsp&nbsp&nbsp•&nbsp&nbsp&nbsp&nbsp <a href="">Ver en mapa</a></h4>
+                        <div class="SeleccionProducto">
+                            <h4><a href="">Ver todo</a></h4>
+                            <h4>Pastas</h4>
+                            <h4>Lácteos</h4>                          
+                            <h4>Congelados</h4>
+                            <h4>Galletitas y panaderia</h4>
+                            <h4>Comidas preparadas</h4>
+                            <h4>Cereales y Harinas</h4>
+                            <h4>Arroz, granos y puré</h4>
+                        </div>
                     </div>
                     <div class="Centrar ModoEntrega">
                         <div class="btn-group">
@@ -67,19 +76,22 @@
                                 <span class="TextoUbicacion"><img src="../iconos/ubicacion.png" height="15"/> 400 m.</span>
                             </div>
                         </div>
+                        <div>
+                            <button class="BotonPedido">Ver mi pedido</button>
+                        </div>
                     </div>
                 </section>
                 <section class="ListaProductos">
                     <div class="Producto">
                         <div class="ImagenProducto">
-                            <img width="150px" src="../img/cafeteria.jpg" alt="">
+                            <img width="150px" src="../img/leche.jpg" alt="">
                         </div>
-                        <div>
-                            <h2>Pizza napolitana</h2>
-                            <p>Al molde con muzzarella y tomate</p>
+                        <div class="ProductoDescripcion">
+                            <h2>Leche entera</h2>
+                            <p>Larga vida x 1 lt.</p>
                         </div>
                         <div class="ProductoPrecio">
-                            <h3>$2000</h3>
+                            <h3>$220</h3>
                             <button class="BotonAgregar" onclick="incrementar('ContadorProduco1', 'MensajeProduco1')">AGREGAR</button>
                             <p id="MensajeProduco1"><strong id="ContadorProduco1">0</strong> en el carrito</p>
                         </div>
@@ -87,14 +99,14 @@
                     <hr class="LineaPunteada">
                     <div class="Producto">
                         <div class="ImagenProducto">
-                            <img width="150px" src="../img/cafeteria.jpg" alt="">
+                            <img width="150px" src="../img/fideos.jpg" alt="">
                         </div>
-                        <div>
-                            <h2>espinaca</h2>
-                            <p>frgdrgsrtrr</p>
+                        <div class="ProductoDescripcion">
+                            <h2>Fideos Tirabuzon</h2>
+                            <p>3 vegetales x 500 gr.</p>
                         </div>
                         <div class="ProductoPrecio">
-                            <h3>$43453</h3>
+                            <h3>$240</h3>
                             <button class="BotonAgregar" onclick="incrementar('ContadorProduco2', 'MensajeProduco2')">AGREGAR</button>
                             <p id="MensajeProduco2"><strong id="ContadorProduco2">0</strong> en el carrito</p>
                         </div>
@@ -102,14 +114,14 @@
                     <hr class="LineaPunteada">
                     <div class="Producto">
                         <div class="ImagenProducto">
-                            <img width="150px" src="../img/cafeteria.jpg" alt="">
+                            <img width="150px" src="../img/medallon de carne.jpg" alt="">
                         </div>
-                        <div>
-                            <h2>espinaca</h2>
-                            <p>frgdrgsrtrr</p>
+                        <div class="ProductoDescripcion">
+                            <h2>Medallon de carne</h2>
+                            <p>x 4 unidades x 280 gr.</p>
                         </div>
                         <div class="ProductoPrecio">
-                            <h3>$2000</h3>
+                            <h3>$430</h3>
                             <button class="BotonAgregar" onclick="incrementar('ContadorProduco3', 'MensajeProduco3')">AGREGAR</button>
                             <p id="MensajeProduco3"><strong id="ContadorProduco3">0</strong> en el carrito</p>
                         </div>
@@ -117,14 +129,74 @@
                     <hr class="LineaPunteada">
                     <div class="Producto">
                         <div class="ImagenProducto">
-                            <img width="150px" src="../img/cafeteria.jpg" alt="">
+                            <img width="150px" src="../img/panlactal.jpg" alt="">
                         </div>
-                        <div>
-                            <h2>espinaca</h2>
-                            <p>frgdrgsrtrr</p>
+                        <div class="ProductoDescripcion">
+                            <h2>Pan Lactal</h2>
+                            <p>Integral x 290 gr.</p>
                         </div>
                         <div class="ProductoPrecio">
-                            <h3>$43453</h3>
+                            <h3>$360</h3>
+                            <button class="BotonAgregar" onclick="incrementar('ContadorProduco4', 'MensajeProduco4')">AGREGAR</button>
+                            <p id="MensajeProduco4"><strong id="ContadorProduco4">0</strong> en el carrito</p>
+                        </div>
+                    </div>
+                    <hr class="LineaPunteada">
+                    <div class="Producto">
+                        <div class="ImagenProducto">
+                            <img width="150px" src="../img/yogur.jpg" alt="">
+                        </div>
+                        <div class="ProductoDescripcion">
+                            <h2>Yogur bebible descremado</h2>
+                            <p>Sabor frutilla x 1 lt.</p>
+                        </div>
+                        <div class="ProductoPrecio">
+                            <h3>$440</h3>
+                            <button class="BotonAgregar" onclick="incrementar('ContadorProduco4', 'MensajeProduco4')">AGREGAR</button>
+                            <p id="MensajeProduco4"><strong id="ContadorProduco4">0</strong> en el carrito</p>
+                        </div>
+                    </div>
+                    <hr class="LineaPunteada">
+                    <div class="Producto">
+                        <div class="ImagenProducto">
+                            <img width="150px" src="../img/arvejas.jpg" alt="">
+                        </div>
+                        <div class="ProductoDescripcion">
+                            <h2>Arveja congelada</h2>
+                            <p>x 300 gr.</p>
+                        </div>
+                        <div class="ProductoPrecio">
+                            <h3>$410</h3>
+                            <button class="BotonAgregar" onclick="incrementar('ContadorProduco4', 'MensajeProduco4')">AGREGAR</button>
+                            <p id="MensajeProduco4"><strong id="ContadorProduco4">0</strong> en el carrito</p>
+                        </div>
+                    </div>
+                    <hr class="LineaPunteada">
+                    <div class="Producto">
+                        <div class="ImagenProducto">
+                            <img width="150px" src="../img/galletitas.jpg" alt="">
+                        </div>
+                        <div class="ProductoDescripcion">
+                            <h2>Galletitas variedad</h2>
+                            <p>Sabor chocolate x 310 gr.</p>
+                        </div>
+                        <div class="ProductoPrecio">
+                            <h3>$280</h3>
+                            <button class="BotonAgregar" onclick="incrementar('ContadorProduco4', 'MensajeProduco4')">AGREGAR</button>
+                            <p id="MensajeProduco4"><strong id="ContadorProduco4">0</strong> en el carrito</p>
+                        </div>
+                    </div>
+                    <hr class="LineaPunteada">
+                    <div class="Producto">
+                        <div class="ImagenProducto">
+                            <img width="150px" src="../img/empanadas.jpg" alt="">
+                        </div>
+                        <div class="ProductoDescripcion">
+                            <h2>Empanadas</h2>
+                            <p>De carne suave x 2 u.</p>
+                        </div>
+                        <div class="ProductoPrecio">
+                            <h3>$280</h3>
                             <button class="BotonAgregar" onclick="incrementar('ContadorProduco4', 'MensajeProduco4')">AGREGAR</button>
                             <p id="MensajeProduco4"><strong id="ContadorProduco4">0</strong> en el carrito</p>
                         </div>
