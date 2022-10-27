@@ -23,7 +23,6 @@ if (confirm('¿Te querés registrar como consumidor?')){
     alert ('Se registró el negocio ' + NombreNegocio)
 }*/
 
-
 function registrarConsumidor() {
     let nombre = document.getElementById("ConsuNombreCompleto").value;
     let correo = document.getElementById("ConsuCorreo").value;

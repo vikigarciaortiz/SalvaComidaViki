@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="cargarCarrito();">
     <div>
         <header class="HeaderCarrito">
             <img class="LogoHeader" src="../iconos/logo blanco png.png" alt="Logo">
@@ -25,62 +25,25 @@
                     <div class="">
                         <h1>Supermercado "El Nene"</h1>
                         <div class="TiempoCosto">
-                            <img src="../iconos/reloj.png" alt="" width="20px">
-                            <h4>20 min • </h4>
-                            <img src="../iconos/envio.png" alt="" width="20px">
-                            <h4>$190</h4>
+                            <h4><img src="../iconos/reloj.png" alt="" width="20px"> 20 min • <img src="../iconos/envio.png" alt="" width="20px"> $190</h4>
                         </div>                        
                     </div>
                 </section>
-                <section class="ProductosCarrito">
+                <section id="DivProductoCarrito" class="ProductosCarrito">
+                </section>
+                <section class="SubtotalCarrito">
                     <div>
-                        <div class="ImagenProducto">
-                            <img width="150px" src="../img/empanadas.jpg" alt="">
-                        </div>
-                        <div class="ProductoDescripcion">
-                            <h2>Empanadas</h2>
-                            <p>De carne suave x 2 u.</p>
-                        </div>
-                        <div>
-                            <h3>Cantidad</h3>
-                        </div>
-                        <div class="ProductoPrecio">
-                            <h3>$280</h3>
-                        </div>                        
-                        <div class="ImagenProducto">
-                            <img width="150px" src="" alt="">
-                        </div>
-                        <div class="ProductoDescripcion">
-                            <h2>Leche entera</h2>
-                            <p>Larga vida x 1 lt.</p>
-                        </div>
-                        <div>
-                            <h3>Cantidad</h3>
-                        </div>
-                        <div class="ProductoPrecio">
-                            <h3>$220</h3>
-                        </div>
-                            <div class="ImagenProducto">
-                            <img width="150px" src="" alt="">
-                        </div>
-                        <div class="ProductoDescripcion">
-                            <h2>Leche entera</h2>
-                            <p>Larga vida x 1 lt.</p>
-                        </div>
-                        <div>
-                            <h3>Cantidad</h3>
-                        </div>
-                        <div class="ProductoPrecio">
-                            <h3>$220</h3>
-                        </div>                        
+                        <h2>Subtotal</h2>
                     </div>
                     <div>
-                        <h2>Subtotal $</h2>
+                        <h2 id="Subtotal">$</h2>
                     </div>
                 </section>
                 <section class="AgregarProducto">
                     <div>
-                        <button class="BotonMasProductos">Agregar más productos</button>
+                        <a href="productos.html">
+                            <button class="BotonMasProductos">Agregar más productos</button>
+                        </a>                        
                     </div>
                 </section>
                 <section class="EntregaCarrito">
@@ -90,22 +53,49 @@
                     <div>
                         <h4>Dirección de entrega</h4>
                         <h4>Calle 16 419</h4>
-                        <h3>cambiar</h3>
+                        <h3 class="CambiarDireccion">cambiar <img src="../iconos/lapiz.png" alt="" width="15px"></h3>
                     </div>
                 </section>
                 <section class="MetodoPago">
-                    <h2>Método de pago</h2>
                     <div>
-                        <img src="" alt="">
-                        <h3>Efectivo</h3>
-                        <h3>cambiar</h3>
+                        <h2>Método de pago</h2>
                     </div>
+                    <div>
+                        <h3><img src="../iconos/efectivo.png" alt="" width="25px">&nbsp;&nbsp;&nbsp; Efectivo</h3>
+                    </div>                
+                    <div>
+                        <h3>cambiar &nbsp;&nbsp;&nbsp;<img src="../iconos/lapiz.png" alt="" width="15px"></h3>
+                    </div> 
+                    <div>
+                        <h3>Comentarios (opcional)</h3>
+                    </div>    
+                    <div>
+                        <textarea name="" id="" cols="40" rows="2" placeholder="Ingresa algún comentario a tener en cuenta"></textarea>
+                    </div>                           
                 </section>
                 <section class="ResumenPedido">
-                    <h2>Resumen de tu pedido</h2>
-                    <h3>Costo productos</h3>
-                    <h3>Costo envío</h3>
-                    <h2>Total</h3>
+                    <div>
+                        <h2>Resumen de tu pedido</h2>
+                    </div>
+                    <div></div>
+                    <div>
+                        <h3>Costo productos</h3>
+                    </div>
+                    <div>
+                        <h3 id="SubtotalProductos">$</h3>
+                    </div>                    
+                    <div>
+                        <h3>Costo envío</h3>
+                    </div>
+                    <div>
+                        <h3>$190</h3>
+                    </div>    
+                    <div>
+                        <h2>Total</h2>
+                    </div>
+                    <div>
+                        <h3 id="CostoTotal">$</h3>
+                    </div>    
                 </section>
                 <section class="FinalizarCarrito">
                     <button class="BotonPedido">Hacer pedido</button>
