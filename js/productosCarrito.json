@@ -2,29 +2,29 @@
     {
         "nombre": "Empanadas",
         "descripcion": "De carne suave x 2u.",
-        "precio": 280,
+        "precio": 230,
         "cantidad": 2,
         "imagen": "../img/empanadas.jpg"
     },
     {
         "nombre": "Arveja congelada",
         "descripcion": "x 300 gr.",
-        "precio": 410,
+        "precio": 350,
         "cantidad": 1,
-        "imagen": "../img/empanadas.jpg"
+        "imagen": "../img/arvejas.jpg"
     },
     {
         "nombre": "Fideos tirabuzon",
         "descripcion": "3 vegetales x 500 gr.",
-        "precio": 240,
+        "precio": 170,
         "cantidad": 3,
-        "imagen": "../img/empanadas.jpg"
+        "imagen": "../img/fideos.jpg"
     },
     {
         "nombre": "Yogur bebible descremado",
         "descripcion": "Sabor vainilla x 1 lt.",
-        "precio": 450,
+        "precio": 360,
         "cantidad": 1,
-        "imagen": "../img/empanadas.jpg"
+        "imagen": "../img/yogur.jpg"
     }
 ]
