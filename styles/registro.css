@@ -12,6 +12,13 @@
     text-align: center;
 }
 
+.FormCheckbox {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 10px;
+}
+
 .BotonFacebook{
     background-color: #3b5998;
     margin: 10px;
